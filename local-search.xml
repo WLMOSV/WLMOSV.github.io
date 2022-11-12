@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>Archlinux配置壁纸引擎</title>
+    <link href="/2022/11/12/Archlinux%E9%85%8D%E7%BD%AE%E5%A3%81%E7%BA%B8%E5%BC%95%E6%93%8E/"/>
+    <url>/2022/11/12/Archlinux%E9%85%8D%E7%BD%AE%E5%A3%81%E7%BA%B8%E5%BC%95%E6%93%8E/</url>
+    
+    <content type="html"><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="安装Steam"><a href="#安装Steam" class="headerlink" title="安装Steam"></a>安装Steam</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">yay -S steam<br></code></pre></td></tr></table></figure><ul><li>登陆steam账户</li><li>启用steamplay中的<strong>proton</strong></li><li>下载wallpaper Engine（steam输入不了中文 软件所致）</li></ul><h2 id="下载壁纸引擎包"><a href="#下载壁纸引擎包" class="headerlink" title="下载壁纸引擎包"></a>下载壁纸引擎包</h2><p>这个网址<a href="https://aur.archlinux.org/packages/plasma5-wallpapers-wallpaper-engine-git">https://aur.archlinux.org/packages/plasma5-wallpapers-wallpaper-engine-git</a></p><p>或者是</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">yay -S plasma5-wallpapers-wallpaper-engine<br></code></pre></td></tr></table></figure><p>在壁纸引擎下载你喜欢的动态壁纸。</p><hr><p><img src="https://s2.loli.net/2022/11/12/SVi85zYux2g3K7D.png" alt="壁纸引擎"></p><p>桌面右击 <font color=red>点击配置面和壁纸</font></p><hr><p><img src="https://s2.loli.net/2022/11/12/4sJkzi1TPcx5HtF.png" alt="就像这样！"></p><p>点击Library 然后按下ctrl+H打开隐藏文件夹 目录如下 </p><hr><p><img src="https://s2.loli.net/2022/11/12/oHOcIrKBTLht49D.png" alt="前提是你要打开隐藏文件"></p><h2 id="更换壁纸"><a href="#更换壁纸" class="headerlink" title="更换壁纸"></a>更换壁纸</h2><p>现在我们就可以随心所欲的下载我们的壁纸了</p><p>不过 由于某些壁纸缺少一些包的支持可能会黑屏</p><p>大家可以在<font color=black><a href="https://github.com/Almamu/linux-wallpaperengine">这里</a></font>找到<del>解决方法</del></p><hr><p><strong>效果展示</strong></p><p><img src="https://s2.loli.net/2022/11/12/yoTpSbi2rOYcEQe.png" alt="动态壁纸"></p><h2 id="完成！"><a href="#完成！" class="headerlink" title="完成！"></a>完成！</h2>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Archlinux虚拟机游玩红警</title>
     <link href="/2022/11/04/Archlinux%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%B8%B8%E7%8E%A9%E7%BA%A2%E8%AD%A6/"/>
     <url>/2022/11/04/Archlinux%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%B8%B8%E7%8E%A9%E7%BA%A2%E8%AD%A6/</url>
