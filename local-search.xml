@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>Archlinux使用wine运行ra2</title>
+    <link href="/2022/11/15/Archlinux%E4%BD%BF%E7%94%A8wine%E8%BF%90%E8%A1%8Cra2/"/>
+    <url>/2022/11/15/Archlinux%E4%BD%BF%E7%94%A8wine%E8%BF%90%E8%A1%8Cra2/</url>
+    
+    <content type="html"><![CDATA[<blockquote><p>之前我们做了虚拟机教程 但太繁琐</p></blockquote><h2 id="安装安装"><a href="#安装安装" class="headerlink" title="安装安装"></a>安装安装</h2><p>安装<a href="https://www.winehq.org/">wine</a> 不用我说了吧。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo pamcan -S wine<br></code></pre></td></tr></table></figure><p>ra2 自行下载。</p><p>我们安装一个ra2到我们的Archlinux 也可以直接把windows里面的ra2移动到这里。</p><p><img src="https://s2.loli.net/2022/11/15/Ce3LJsuZbqpH6Yh.png" alt="游戏安装目录"></p><p>我们现在先不要运行ra2 需要对wine设置一些参数 以及下载一些兼容组件：</p><p>从<a href="https://github.com/FunkyFr3sh/cnc-ddraw/releases/download/v4.9.0.0/cnc-ddraw.zip">release</a>标签页下载cnc-ddraw组件，将下载后的压缩包解压得到文件</p><p><img src="https://s2.loli.net/2022/11/15/dwKO4zhMTbt8RS7.png" alt="draw兼容文件目录所示"></p><h2 id="复制文件"><a href="#复制文件" class="headerlink" title="复制文件"></a>复制文件</h2><p>将上一步解压得到的ddraw.dll链接库文件和ddraw.ini配置文件复制到ra2目录下，然后使用编辑器分别配置ddraw.ini、ra2.ini、ra2md.ini三个文件</p><p>如果你没有ra2.ini文件 从网络上下载一份比如：<a href="http://cn.dll-overhaul.com/file/ra2.ini/207.html"><strong>这里</strong></a></p><h4 id="使用vim编辑文件"><a href="#使用vim编辑文件" class="headerlink" title="使用vim编辑文件"></a>使用vim编辑文件</h4><p>ddraw.ini:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">fullscreen=<span class="hljs-literal">true</span><br><br>renderer=gdi  <span class="hljs-comment">#这里的gdi也可以设置成opengl</span><br></code></pre></td></tr></table></figure><p>ra2.ini:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">ScreenWidth=分辨率宽<span class="hljs-comment">#1920</span><br><br>ScreenHeight=分辨率高<span class="hljs-comment">#1080</span><br><span class="hljs-comment">#1920*1080是我的分辨率。</span><br></code></pre></td></tr></table></figure><p>如果你玩的是尤里的复仇那么这里就不是ra2.ini。而是<font color=red >ra2md.ini</font></p><h2 id="配置winecfg"><a href="#配置winecfg" class="headerlink" title="配置winecfg"></a>配置winecfg</h2><p>终端输入<strong>winecfg</strong> </p><p><img src="https://s2.loli.net/2022/11/15/VLPaJCbwzmk87ol.png" alt="winecfg"></p><p>进入「函数库&#x2F;Libraries」选项卡，新增<font color=red>「ddraw」</font>项，并单击右侧的「编辑&#x2F;Edit」，将ddraw规则更改为「原装先于内建&#x2F;Native then builtin」，之后在「显示&#x2F;Graphics」选项卡下勾选「全屏模式自动捕获鼠标&#x2F;Automatically capture the mouse xxx」，确认退出。</p><p>如图：</p><p><img src="https://s2.loli.net/2022/11/15/GUWhQCg2af8Btk9.png" alt="winecfg函数设置"></p><p><img src="https://s2.loli.net/2022/11/15/1MXnfC7TArlpFNP.png" alt="winecfg显示设置"></p><p>完成后 记得点击<strong>应用</strong></p><p>游戏文件夹如下：</p><p><img src="https://s2.loli.net/2022/11/15/S6e2L3Yw8ZTOd5t.png" alt="Ra2游戏文件夹"></p><h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">wine</span> ra2.exe<br></code></pre></td></tr></table></figure><p><img src="https://s2.loli.net/2022/11/15/EOdjqvhHcNRGapm.png" alt="游戏截图"></p><p><img src="https://s2.loli.net/2022/11/15/E5IOeCljzDmSi67.png" alt="游戏截图"></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title></title>
     <link href="/2022/11/12/H1/"/>
     <url>/2022/11/12/H1/</url>
